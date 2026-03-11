@@ -16,7 +16,7 @@ jobs:
     name: OctaneIntegration#${{github.event.action}}#${{github.event.workflow_run.id}}
     steps:
       - name: GitHub Actions ALM Octane Integration
-        uses: MicroFocus/alm-octane-github-actions-integration@v1.0
+        uses: MicroFocus/alm-octane-github-actions-integration@v25.2.1
         id: gitHubActionsIntegration
         
         with:
@@ -30,4 +30,4 @@ jobs:
          
           serverBaseUrl: https://github.com/AmineGuermezi/KarateProject
           pipelineNamePattern: '${workflow_name}'
-          unitTestResultsGlobPattern: "**/target/surefire-reports/TEST-*.xml"
+          unitTestResultsGlobPattern: "**/*.xml"
