@@ -7,7 +7,10 @@ on:
     
     workflows: [Karate API Tests]
     
-    types: [requested, in_progress, completed]
+    types: [completed]
+    
+env: 
+    FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   octane_integration_job:
